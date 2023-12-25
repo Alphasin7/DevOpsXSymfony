@@ -1,0 +1,24 @@
+<h1>Recherche Voiture</h1>
+<form action="" method="POST">
+    Libelee: <input type="text" name ="input_libelee">
+    <input type="submit" value="Rechercher">
+
+</form>
+{% if voitures is empty %}
+    Aucune voiture trouvée
+{% else %}
+    <table border="1">
+        <tr>
+            <td>Marque</td>
+            <td>Modele</td>
+            <td>Pays</td>
+        </tr>
+        {% for v in voitures %}
+            <tr>
+                <td>{{ v.marque.libelee }}</td>
+                <td>{{ v.modele }}</td>
+                <td>{{ v.marque.pays }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endif %}
