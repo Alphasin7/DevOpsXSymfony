@@ -2,6 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/docker/environnement-de-developpement-symfony-5-avec-docker-et-docker-compose" vcs="Git" />
   </component>
 </project>
